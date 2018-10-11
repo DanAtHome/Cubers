@@ -4,5 +4,10 @@
   },
   "main": "main.ns.js",
   "name": "migration-ng",
-  "version": "4.1.0"
+  "version": "4.1.0",
+  "dependencies": {
+    "firebase": "^5.5.3",
+    "primeicons": "^1.0.0-beta.10",
+    "primeng": "^6.1.4"
+  }
 }

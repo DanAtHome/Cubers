@@ -1,0 +1,15 @@
+<div style="border: 2px solid green;border-radius: 5px;background: greenyellow;display:table">
+<div  *ngFor="let card of cards" >
+      <div (mouseenter)="displaycard.show($event)" (click)="editcard(card)" (mouseout)="displaycard.hide($event)">
+        {{card.name}}
+      </div>
+
+      <p-overlayPanel #displaycard [dismissable]="true" [showCloseIcon]="true">
+        <img src="{{card.normalImgUrl}}" />
+    </p-overlayPanel>
+</div>
+</div>
+
+<p-dialog header="{{selectedCard.name}}" [modal]="true" [(visible)]="displayEdit">
+  do stuff!!!
+</p-dialog>
